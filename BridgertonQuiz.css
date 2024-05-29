@@ -1,0 +1,78 @@
+body {
+background-color: rgb(181, 210, 243);
+align-items: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.btnGrid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    border-radius: 10px;
+    justify-items: center;
+    
+}
+
+.btn {
+    background-color: rgb(88, 88, 182);
+    border: 5px;
+    border-radius: 5px;
+    padding: 5px, 10px;
+    color: white;
+}
+
+.btn.correct {
+    background-color: rgb(176, 236, 176);
+    color: black;
+
+}
+
+.btn.wrong {
+    background-color: rgb(243, 114, 114);
+    color: black;
+
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.hide {
+    display: none;
+}
