@@ -9,6 +9,7 @@ const answerButtonsElement = document.getElementById('answerBtn')
 let shuffledQuestions 
 let currentQuestionIndex
 
+//when you click start quiz you have event listeners that call functions start game and next question.
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
@@ -24,7 +25,7 @@ function startGame() {
   setNextQuestion()
 }
 
-//Function to call on 2 other functions that on next question clears and laods new question.
+//Function to call on 2 other functions that on next question clears and loads new random question.
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
@@ -47,14 +48,13 @@ function showQuestion(question) {
 
 // this is a function to reset everything (new q and color changes) when the next button is selected
 function resetState() {
-  clearStatusClass(document.body)
   nextButton.classList.add('hide')
   while (answerButtonsElement.firstChild) {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
   }
 }
 
-//shuffles questions 
+// when an answer is clicked it checks if it's correct and unhides next button
 function selectAnswer(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
