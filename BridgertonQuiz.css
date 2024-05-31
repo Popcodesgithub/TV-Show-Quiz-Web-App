@@ -13,7 +13,6 @@ body {
     justify-content: center;
 }
 
-
 .container {
     width: 800px;
     max-width: 80%;
@@ -21,6 +20,15 @@ body {
     border-radius: 5px;
     padding: 50px;
     margin:auto
+}
+
+.controls, .startBtn-Btn, .nextBtn-Btn {
+    align-items: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: auto;
+    width: fit-content;
 }
 
 .btnGrid {
@@ -52,13 +60,6 @@ body {
     background-color: rgb(243, 114, 114);
     color: black;
 
-}
-
-.controls {
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
 }
 
 .hide {
