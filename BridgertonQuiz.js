@@ -9,7 +9,7 @@ const answerButtonsElement = document.getElementById('answerBtn')
 let shuffledQuestions 
 let currentQuestionIndex
 
-//when you click start quiz you have event listeners that call functions start game and
+//when you click start quiz you have event listeners that call functions. 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
