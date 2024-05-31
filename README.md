@@ -28,7 +28,7 @@ split(). (E.g.The theme could be the different CFGdegree streams.)
 methods.
 
 <figure>
-   <figcaption>New pbjects and object methods</figcaption> 
+   <figcaption>New objects and object methods</figcaption> 
    <img src="objectmethodScreenshot.jpg"
          alt="New pbjects and object methods">
 </figure>
