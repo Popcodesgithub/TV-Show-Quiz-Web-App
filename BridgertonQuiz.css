@@ -1,39 +1,45 @@
+* {
+    font-family: 'poppins';
+}
+
 body {
     background-color: rgb(181, 210, 243);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'poppins';
 }
 
 .center {
     color: white;
     text-align: center;
     justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 .container {
     width: 800px;
     max-width: 80%;
-    display: flex;
     background-color: white;
     border-radius: 5px;
-    padding: 20px;
-
+    padding: 50px;
+    margin:auto
 }
 
 .btnGrid {
     display: grid;
-    align-items: center;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(1,auto);
     gap: 10px;
     border-radius: 10px; 
 }
 
+
 .btn {
+    width: 50%;
+    margin: auto;
     background-color: rgb(88, 88, 182);
     border: 5px;
     border-radius: 5px;
-    padding: 5px, 10px;
+    padding: 10px;
     color: white;
+    cursor: pointer;
 }
 
 .btn.correct {
@@ -48,14 +54,11 @@ body {
 
 }
 
-
 .controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: medium;
     font-weight: bold;
     padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .hide {
